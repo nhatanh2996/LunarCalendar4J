@@ -3,12 +3,12 @@ package dto;
 import java.util.Arrays;
 
 public enum DiaChi {
-    TI(1, "Tý"),
+    TY(1, "Tí"),
     SUU(2, "Sửu"),
     DAN(3, "Dần"),
     MAO(4, "Mão"),
     THIN(5, "Thìn"),
-    TY(6, "Tỵ"),
+    TYJ(6, "Tỵ"),
     NGO(7, "Ngọ"),
     MUI(8, "Mùi"),
     THAN(9, "Thân"),
@@ -36,5 +36,6 @@ public enum DiaChi {
     public static DiaChi fromCode(int code) {
         return Arrays.stream(values()).filter(diaChi -> diaChi.getCode() == code).findFirst().orElse(null);
     }
+
 
 }
